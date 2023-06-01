@@ -114,6 +114,13 @@
 
       alert("Registration successful!");
     }
+
+    function signOut() {
+      document.getElementById("main-page").style.display = "none";
+      document.getElementById("signin-page").style.display = "block";
+      document.getElementById("username").value = "";
+      document.getElementById("password").value = "";
+    }
   </script>
 </head>
 <body>
@@ -135,6 +142,7 @@
     <input type="text" class="text-placeholder" placeholder="Enter your name">
 
     <a href="#" class="button">Click Me!</a>
+    <button class="button" onclick="signOut()">Sign Out</button>
   </div>
 
   <div class="container" id="registration-page" style="display: none;">
